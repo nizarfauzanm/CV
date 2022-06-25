@@ -1,0 +1,249 @@
+<!--before starts, please open:
+1. VS code and the index.html file
+2.Open the Udemy course
+3. Clik the "go-live" on the bottom bar so it can display live stream update of the web changes
+    while coding and clicking save.
+4. Search for any syntax on google through mdn or w3.
+5. Press Fn + (right) to go to the end of the line
+
+-->
+<!DOCTYPE html><!--it starts with a template. the way to call it by type "!" and press enter-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">  <!--learn about the UTF-8 unicode characters-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nizar's Personal Site</title>
+    </head>
+    <body>
+        <table cellspacing="20">
+            <tr>
+                <td>
+                    <img src="images/Nizar cropped circle.png" alt="close up photo of nizar"
+                    width="200px">
+                </td>
+                <Td>        
+                    <h1 class="Name">Nizar Makkajareng</h1>  
+                    <p><em>Structural</em> &#127753 and <strong>Software Engineer</strong> &#128187 </p>
+                    <p>Lifetime Basketball Lover and Player &#127936 </p>
+                    <p>Beginner Golfer &#9971</p>
+                    
+                </Td>
+            </tr>
+        </table>
+        <hr>
+        <P>
+            I am a professional with 5 year experiences in structural 
+            and civil engineering consultancy in Indonesia and
+            currently in the last year of Master of Structural Engineering course 
+            in The University of Melbourne. I have involved in many design and 
+            supervision projects of buildings, roads and bridges with the notable 
+            ones are IKEA Indonesia Jakarta second warehouse, 30 story Carztensz 
+            Apartement, Mass Rapid Transit (MRT) Jakarta, 1600 meter Kendari Cable 
+            Stayed Bridge and 14 kilometer Kendari-Toronipa Road. I am reliable, 
+            critical thinker, structured thinker, highly well-organized, adaptable, 
+            fast learner, communicate clearly, coordinate clearly, able to work 
+            under pressure, and have sufficient competencies to work in or lead 
+            teams. I have also several nonprofessional casual work experiences in 
+            Melbourne. My organization experiences also helped me forming my
+            leadership, maturity in teamwork and people management skill.
+        </P>
+        <!--
+        <p> <em>the text is emphasized which tells the browwer that it
+            is emphasized,</em> while <i>i tag only visually make the text 
+            italic without telling the search engines that it is emphasized.</i>
+        </p> 
+
+        <p>
+            <strong>the strong tag is to tell that the word is strong and bolt.</strong>
+            <b>Meanwhile, bolt tag only makes the text bold and that is it.</b>
+        </p>
+        --> 
+        <hr>
+
+        <h3>Education</h3>
+        <!--now how to make lists in bullets or numbering. It uses <ul> tag-->
+        <ul>
+            <li>Primary School</li>
+       
+            <ul> <!--ul means Unodered List-->
+                <li>SD Kuncup Pertiwi</li>
+            </ul>
+            <li>Secondary School</li>
+            <ol> <!--ol means Ordered List, with numbers-->
+                <li>SMP Negeri 9 Kendari</li>
+                <li>SMA Negeri 4 Kendari</li>        
+            </ol>
+            <li>Tertiary Educations:</li>
+            <ol type="a">
+                <li>Institut Teknologi Bandung</li>
+                <ul>
+                    <li>
+                    <!--Now we are attaching image to web. The image can be from local memory
+                    or from internet using url-->
+                    <img class="ITB" src="https://www.itb.ac.id/files/cover/about-itb.jpg" alt="Photo of ITB
+                    Bandung Campus Buildings">
+                    <style>
+                        .ITB{width:25%; vertical-align:text-top}
+                    </style>
+                    </li>
+                </ul>
+                <li>The University of Melbourne</li>
+                <ul>
+                    <li>
+                    <img class="Unimelb" src="images/Unimelb.jpg" alt="Unimelb Parkville campus">
+                    <style>
+                        .Unimelb{width:25%; vertical-align:text-top}
+                    </style>
+                    </li>
+                </ul>
+            </ol>
+        </ul>
+
+        <hr>
+        <h3>Working Experience</H3>
+            <!--Make a list with ordered invisible column and row to make it nicer-->
+            <table cellspacing="20"> <!--this is to call the table-->
+                <thead> <!--we can use the th without this thead tbody or tfooter, 
+                    but this thead will function like a h1 h2 h3 section to give the th a name to be 
+                    in other function such as in CSS and JS.-->
+                    <tr>
+                        <th>Period</th> <!--table head-->
+                        <th>Position</th>
+                        <th>Companny</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> <!--this is to make a row-->
+                        <td>2016-2016</td> <!--this represents column-->
+                        <td>Site Engineer </td>
+                        <td>OSJ JV</td>
+                    </tr>
+                    <tr>
+                        <td>2016-2018</td> <!--this represents column-->
+                        <td>Structral Engineer</td>
+                        <td>Taylor Thomson Whitting</td>
+                    </tr>
+                    <tr>
+                        <td>2018-2019</td> <!--this represents column-->
+                        <td>Structral Engineer</td>
+                        <td>Kendari Bay Cable Stay Bridge Project</td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td>what future?</td>
+                        <td>what future?</td>
+                        <td>what future?</td>
+                    </tr>
+                </tfooter>
+            </table>
+
+        <hr class="beforeHobby">
+            <style>
+                .beforeHobby{
+                    height:5px;
+                    background-color:aquamarine;
+                    border-color:red
+                }
+             </style>
+
+        <h3>Hobby</h3>
+        <ul>
+            <li>
+                    Basketball. <p>Click this google icon to know more.
+                    <a href="https://www.sportingnews.com/au/nba?gr=www" target="blank">
+                    <img src="images/google logo.png" alt="google logo" width="100px" 
+                    style="vertical-align:middle">
+                    </a>
+                </p>
+            </li>
+            <li>Gym / weight lifting</li>
+        </ul>
+
+        <hr>
+        
+        <h3>Skills</h3>
+                     
+        <Table cellspacing="10px">
+            <tr>
+                <td>High-rise building design</td>
+                <td>&#11088 &#11088 &#11088 &#11088 &#11088</td>
+            </tr>
+            <tr>
+                <td>Bridge design</td>
+                <td>&#11088 &#11088 &#11088 &#11088 &#11088</td>
+            </tr>
+            <tr>
+                <td>Web developing (HTML, CSS, Javascript)</td>
+                <td>&#11088 &#11088</td>
+            </tr>
+            <tr>
+                <td>Critical Thinking</td>
+                <td>&#11088 &#11088 ⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Leadership</td>
+                <td>&#11088 &#11088 &#11088 &#11088 </td>
+            </tr>
+            <tr>
+                <td>Time Management</td>
+                <td>&#11088 &#11088 &#11088 &#11088 &#11088 </td>
+            </tr>
+        </table>
+
+<!--press WIN +(.) to display the emoji picker-->
+<!-- This is the code for make 2 column layout for skills table
+        <table border="">
+            <tr>
+                <td>                     
+                    <Table>
+                        <tr>
+                            <td>High-rise building design</td>
+                            <td>&#11088 &#11088 &#11088 &#11088 &#11088</td>
+                        </tr>
+                        <tr>
+                            <td>Bridge design</td>
+                            <td>&#11088 &#11088 &#11088 &#11088 &#11088</td>
+                        </tr>
+                        <tr>
+                            <td>Web developing (HTML, CSS, Javascript)</td>
+                            <td>&#11088 &#11088</td>
+                        </tr>
+                    </Table>
+
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Critical Thinking</td>
+                            <td>&#11088 &#11088 ⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Leadership</td>
+                            <td>&#11088 &#11088 &#11088 &#11088 </td>
+                        </tr>
+                        <tr>
+                            <td>Time Management</td>
+                            <td>&#11088 &#11088 &#11088 &#11088 &#11088 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+-->
+
+    </body>
+    <hr>
+    <footer>
+        <h2>This is the footer</h2>
+        <a href="page2.html"><p>Go to Page 2</p></a> <!--it is the anchor tag to add hyperlink-->
+        <a href="contactdetails.html"><p>Contact me!</p></a>
+        <p>visit <a href="https://google.com" target="blank">google</a></p>
+
+    </footer>
+    <style>
+        footer{margin-bottom:400px}
+    </style>
+</html>
